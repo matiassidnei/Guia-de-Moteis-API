@@ -1,0 +1,27 @@
+{
+  "name": "guiaapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+  "reporters": [
+    "default",
+    [
+      "jest-html-reporters",
+      {
+        "publicPath": "./reports",
+        "filename": "report.html",
+        "pageTitle": "Relatório de Testes de API"
+      }
+    ]
+  ]
+},
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-html-reporters": "^3.1.7",
+    "supertest": "^6.3.0"
+  }
+}
